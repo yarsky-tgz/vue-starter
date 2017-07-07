@@ -1,0 +1,47 @@
+@import "../../../node_modules/font-awesome/css/font-awesome.css";
+@import "../../../node_modules/vuetify/dist/vuetify.min.css";
+
+body, html {
+  overflow:hidden;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 0.95;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0.95;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-enter-active {
+  animation-name: fadeIn;
+}
+.fade-leave-active {
+  animation-name: fadeOut;
+}
+
+.sequence--placeholder {
+//  font-size: 300px;
+  position: absolute;
+  animation-timing-function: linear;
+}
